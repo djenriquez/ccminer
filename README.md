@@ -1,5 +1,5 @@
 # ccminer
-Dockerized ccminer
+Dockerized tpruvot/ccminer
 
 # Summary
 Dockerizes the ccminer binary. Run the docker container as if it were the actual binary, simply pass in flags.
