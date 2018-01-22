@@ -37,7 +37,7 @@ docker run -d \
 --restart always \
 --runtime=nvidia \
 djenriquez/ccminer \
--a equihash -o stratum+tcp://zcl.suprnova.cc:4044 -u t1WsdsfAzbxUXPgVhT63nm62q97divGgp1s -p x
+-o stratum+tcp://neoscrypt.usa.nicehash.com:3341 -u 33DyXVuy3R5jfLZRRpEQcXXAJ1Xz5rkGxE -p x -a neoscrypt
 ```
 # Dependencies
 - nvidia GPUs
