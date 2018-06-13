@@ -8,12 +8,12 @@ RUN apt-get -y update && \
         libcurl4-openssl-dev
 
 RUN cd /tmp/ && \
-    git clone https://github.com/tpruvot/ccminer.git && \
-    cd /tmp/ccminer && \
+    git clone -b master https://github.com/ocminer/suprminer.git && \
+    cd /tmp/suprminer && \
     ./autogen.sh && \
     ./configure --with-cuda=/usr/local/cuda && \
     make && \
-    mv /tmp/ccminer/ccminer /usr/local/bin/ccminer && \
+    mv /tmp/suprminer/ccminer /usr/local/bin/ccminer && \
     rm -rf /tmp/*
 
 ENTRYPOINT ["ccminer"]
